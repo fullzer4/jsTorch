@@ -1,4 +1,13 @@
 {
+  "name": "jstorch-lib",
+  "private": false,
+  "license": "MIT",
+  "version": "0.0.1",
+  "author": {
+    "email": "gabrielpelizzaro@gmail.com",
+    "name": "Gabriel Pelizzaro Pereira",
+    "url": "https://github.com/fullzer4/jsTorch"
+  },
   "scripts": {
     "build": "node-gyp build && tsc",
     "start": "yarn build && node index.js",
@@ -7,6 +16,6 @@
   "devDependencies": {
     "@types/node": "^20.2.1",
     "ts-node": "^10.9.1",
-    "typescript": "^5.2.0-dev.20230518"
+    "typescript": "^5.0.4"
   }
 }
