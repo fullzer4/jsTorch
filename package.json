@@ -9,12 +9,13 @@
     "url": "https://github.com/fullzer4/jsTorch"
   },
   "scripts": {
-    "build": "node-gyp build && tsc",
-    "start": "yarn build && node index.js",
-    "dev": "ts-node index.ts"
+    "%install": "source ./setup.sh && cmake-js compile",
+    "build": "yarn install && node-gyp build",
+    "start": "yarn build && node index.js"
   },
   "devDependencies": {
     "@types/node": "^20.2.1",
+    "cmake-js": "^7.2.1",
     "ts-node": "^10.9.1",
     "typescript": "^5.0.4"
   }
