@@ -10,8 +10,7 @@ namespace lib {
 
 
   void Initialize(Local<Object> exports) {
-    NODE_SET_METHOD(exports, "tensor", Tensor);
-    NODE_SET_METHOD(exports, "net", Net);
+    NODE_SET_METHOD(exports, "tensor", Tensors::Tensor);
   }
 
   NODE_MODULE(NODE_GYP_MODULE_NAME, Initialize);
