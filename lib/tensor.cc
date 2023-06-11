@@ -56,9 +56,8 @@ namespace jstorch {
       isolate->ThrowException(Exception::TypeError(String::NewFromUtf8(isolate, "O argumento deve ser um array ou um objeto.")));
       return;
     }
-
-    // Retornar o tensor criado
-    args.GetReturnValue().Set(/* Converter o tensor para um tipo JavaScript, se necessário */);
+  
+    args.GetReturnValue().Set(/* Converter o tensor para um tipo JavaScript*/);
   }
 
   void Net(const FunctionCallbackInfo<Value>&args){
@@ -75,11 +74,4 @@ namespace jstorch {
       }
     };
   }
- 
-  void Initialize(Local<Object> exports) {
-    NODE_SET_METHOD(exports, "tensor", Tensor);
-    NODE_SET_METHOD(exprots, "net", Tensor);
-  }
-
-  NODE_MODULE(NODE_GYP_MODULE_NAME, Initialize);
 }
