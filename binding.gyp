@@ -3,7 +3,7 @@
         {
             "target_name": "jstorch",
             "sources": [
-                "./lib/tensor.cc"
+                "./lib/main.cpp"
             ]
         }
     ]
