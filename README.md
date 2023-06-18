@@ -1,3 +1,3 @@
 <div align="center">
-  <img src="./imgs/jsTorch.png" width="500">
+  <img src="./imgs/jsTorch.png" width="400">
 </div>
